@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User CRUD</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 40px;
+        }
+        input, button {
+            padding: 8px;
+            margin: 5px 0;
+        }
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .delete-btn {
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .edit-btn {
+            background-color: orange;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .success {
+            color: green;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Form User</h2>
+
+<form id="userForm">
+    <!-- ID untuk update -->
+    <input type="hidden" id="userId">
+
+    <input type="text" id="name" placeholder="Nama" required>
+    <input type="text" id="nim" placeholder="NIM" required>
+
+    <button type="submit">Simpan</button>
+    <button type="button" onclick="resetForm()">Reset</button>
+</form>
+
+<div id="message"></div>
+
+<h2>List User</h2>
+
+<table>
+    <thead>
+    <tr>
+        <th>Nama</th>
+        <th>NIM</th>
+        <th>Aksi</th>
+    </tr>
+    </thead>
+    <tbody id="userTable"></tbody>
+</table>
+
+<script>
+
+
+</script>
+</body>
+</html>
